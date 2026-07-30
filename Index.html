@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sthhapatya Architects &amp; Associates — Architecture, Interior &amp; Brand Design</title>
+<meta name="description" content="Sthhapatya Architects and Associates is an architecture, interior, and brand design practice. We draft space, light, and the way people move through it.">
+<meta name="keywords" content="Sthhapatya, Architects, Architecture Studio, Interior Design, Brand Identity, Commercial Architecture, Residential Exterior, San Francisco Architecture, Copenhagen Architecture">
+<meta name="author" content="Sthhapatya Architects and Associates">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#12141A">
+
+<!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sthhapatya.com/">
+<meta property="og:title" content="Sthhapatya Architects &amp; Associates — Architecture, Interior &amp; Brand Design">
+<meta property="og:description" content="Sthhapatya Architects and Associates is an architecture, interior, and brand design practice. We draft space, light, and the way people move through it.">
+<meta property="og:image" content="images/exterior-design/Exterior render 1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Sthhapatya Architects and Associates">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://sthhapatya.com/">
+<meta name="twitter:title" content="Sthhapatya Architects &amp; Associates — Architecture, Interior &amp; Brand Design">
+<meta name="twitter:description" content="Architecture, interior, and brand design practice working across exterior, interior, and brand design projects.">
+<meta name="twitter:image" content="images/exterior-design/Exterior render 1.png">
+
+<!-- JSON-LD Structured Data Schema for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ArchitecturalFirm",
+  "name": "Sthhapatya Architects and Associates",
+  "url": "https://sthhapatya.com",
+  "logo": "https://sthhapatya.com/main-site-logo/LOGO.png",
+  "image": "https://sthhapatya.com/images/exterior-design/Exterior%20render%201.png",
+  "description": "Sthhapatya Architects and Associates is an architecture, interior, and brand design practice working across exterior, interior, and brand design projects.",
+  "founder": "Elena Voss",
+  "foundingDate": "2008",
+  "email": "hello@sthhapatya.com",
+  "telephone": "+1-415-555-0148",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Copenhagen",
+      "addressCountry": "DK"
+    }
+  ],
+  "knowsAbout": [
+    "Architecture",
+    "Interior Design",
+    "Brand Identity",
+    "Landscape Design"
+  ]
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%232653C7' stroke-width='9'/%3E%3Cline x1='50' y1='10' x2='50' y2='90' stroke='%232653C7' stroke-width='9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   0. RESET
+============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button,input,textarea,select{font:inherit;color:inherit;background:none;border:none;}
+ul{list-style:none;}
+button{cursor:pointer;}
+
+/* ============================================================
+   1. DESIGN TOKENS
+============================================================ */
+:root{
+  --porcelain:#F7F4EE;
+  --paper:#FFFFFF;
+  --ink:#14171C;
+  --ink-soft:#5B6069;
+  --line:rgba(20,23,27,.13);
+  --amber:#E8A227;   /* Exterior */
+  --blue:#2653C7;    /* Commercial  */
+  --rust:#D64526;    /* Interior */
+  --sage:#4F7A5B;    /* Landscape   */
+  --shadow-lg:0 30px 70px -25px rgba(20,23,27,.30);
+  --shadow-sm:0 10px 30px -12px rgba(20,23,27,.18);
+  --radius-s:7px;
+  --radius-m:18px;
+  --radius-l:26px;
+  --header-h:82px;
+  --font-display:'Fraunces', Georgia, serif;
+  --font-body:'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:'JetBrains Mono', 'Courier New', monospace;
+  --ease:cubic-bezier(.25,.8,.35,1);
+}
+[data-theme="dark"]{
+  --porcelain:#12141A;
+  --paper:#1B1F27;
+  --ink:#F2EFE8;
+  --ink-soft:#9CA1AB;
+  --line:rgba(242,239,232,.13);
+  --amber:#F2B546;
+  --blue:#5C82EE;
+  --rust:#ED6444;
+  --sage:#75AC80;
+  --shadow-lg:0 30px 70px -25px rgba(0,0,0,.6);
+  --shadow-sm:0 10px 30px -12px rgba(0,0,0,.5);
+}
+
+/* ============================================================
+   2. BASE
+============================================================ */
+body{
+  background:var(--porcelain);
+  background-image:radial-gradient(circle at 7% 18%, rgba(38,83,199,.055), transparent 22rem),radial-gradient(circle at 94% 72%, rgba(232,162,39,.07), transparent 25rem);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  transition:background .5s var(--ease), color .5s var(--ease);
+  overflow-x:hidden;
+}
+::selection{background:var(--blue);color:#fff;}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth;}
+}
+section{scroll-margin-top:var(--header-h);}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:32px;}
+h1,h2,h3{font-family:var(--font-display);font-weight:500;letter-spacing:-.01em;}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:.72rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  display:inline-flex;align-items:center;gap:.6em;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor;display:inline-block;}
+.btn{
+  display:inline-flex;align-items:center;gap:.6em;
+  padding:.95em 1.7em;
+  border-radius:999px;
+  font-family:var(--font-mono);
+  font-size:.8rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  transition:transform .35s var(--ease), background .3s ease, color .3s ease, box-shadow .3s ease;
+  white-space:nowrap;
+}
+.btn-solid{background:var(--ink);color:var(--porcelain);}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm);}
+.btn-ghost{border:1px solid var(--line);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+.skip-link{position:fixed;top:12px;left:12px;z-index:1000;padding:.7em 1em;border-radius:999px;background:var(--ink);color:var(--porcelain);font-family:var(--font-mono);font-size:.76rem;transform:translateY(-180%);transition:transform .2s ease;}
+.skip-link:focus{transform:none;}
+
+/* reveal-on-scroll */
+[data-reveal]{opacity:0;transform:translate3d(0,calc(28px + var(--scroll-shift, 0px)),0);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+[data-reveal].is-visible{opacity:1;transform:translate3d(0,var(--scroll-shift, 0px),0);}
+[data-reveal="fade"]{transform:translate3d(0,var(--scroll-shift, 0px),0);}
+[data-reveal] .eyebrow::before{transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease) .1s;}
+[data-reveal].is-visible .eyebrow::before{transform:scaleX(1);}
+[data-reveal][style*="--reveal-delay"]{transition-delay:var(--reveal-delay);}
+@media (prefers-reduced-motion:reduce){
+  [data-reveal]{opacity:1;transform:none;transition:none;}
+}
+
+/* blueprint line-draw symbol, reused via <use> */
+.blueprint-svg{width:100%;height:100%;overflow:visible;}
+.blueprint-svg path,.blueprint-svg line,.blueprint-svg circle{
+  fill:none;stroke:currentColor;stroke-width:1.4;
+  stroke-dasharray:600;stroke-dashoffset:600;
+}
+.blueprint-svg.draw-in path,.blueprint-svg.draw-in line,.blueprint-svg.draw-in circle{
+  animation:draw 2.2s var(--ease) forwards;
+}
+.blueprint-svg.draw-in path:nth-child(2){animation-delay:.15s;}
+.blueprint-svg.draw-in path:nth-child(3){animation-delay:.3s;}
+.blueprint-svg.draw-in line{animation-delay:.45s;}
+.blueprint-svg.draw-in circle{animation-delay:.6s;}
+@keyframes draw{to{stroke-dashoffset:0;}}
+@media (prefers-reduced-motion:reduce){
+  .blueprint-svg path,.blueprint-svg line,.blueprint-svg circle{stroke-dashoffset:0;animation:none;}
+}
+
+/* ============================================================
+   3. SCROLL PROGRESS
+============================================================ */
+.progress-track{position:fixed;top:0;left:0;width:100%;height:3px;z-index:400;background:transparent;}
+.progress-bar{
+  height:100%;width:0%;
+  background:linear-gradient(90deg,var(--amber),var(--blue),var(--rust),var(--sage));
+  transition:width .1s linear;
+}
+
+/* ============================================================
+   4. HEADER & LOGO SETTINGS
+============================================================ */
+header{
+  position:fixed;top:0;left:0;width:100%;z-index:300;
+  height:var(--header-h);
+  display:flex;align-items:center;
+  transition:background .4s ease, box-shadow .4s ease, height .3s ease, top .4s var(--ease), left .4s var(--ease), width .4s var(--ease), border-radius .4s var(--ease);
+}
+header.is-scrolled{
+  top:12px;left:16px;width:calc(100% - 32px);
+  background:rgba(247,244,238,.78);
+  backdrop-filter:blur(18px) saturate(150%);
+  -webkit-backdrop-filter:blur(18px) saturate(150%);
+  border:1px solid rgba(255,255,255,.55);border-radius:16px;
+  box-shadow:0 12px 32px -22px rgba(20,23,27,.45),inset 0 1px 0 rgba(255,255,255,.6);
+  height:68px;
+}
+[data-theme="dark"] header.is-scrolled{background:rgba(18,20,26,.72);border-color:rgba(255,255,255,.08);box-shadow:0 12px 32px -22px rgba(0,0,0,.75),inset 0 1px 0 rgba(255,255,255,.07);}
+header .wrap{display:flex;align-items:center;justify-content:space-between;width:100%;}
+
+/* Logo Fixes */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:.65em;
+  font-family:var(--font-mono);
+  font-size:1rem;
+  letter-spacing:.12em;
+  font-weight:600;
+  text-transform:uppercase;
+}
+.logo img{
+  height: 44px; 
+  width: auto; 
+  object-fit: contain; 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.logo:hover img{transform: scale(1.03);}
+
+/* Dark Mode Logo Fix */
+[data-theme="dark"] .logo img,
+[data-theme="dark"] footer .logo img {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+nav.primary-nav{display:flex;align-items:center;gap:2.4rem;}
+.nav-links{display:flex;gap:2.2rem;font-size:.92rem;}
+.nav-links a{position:relative;padding:.3em 0;}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--blue);
+  transition:width .3s var(--ease);
+}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{display:flex;align-items:center;gap:1rem;}
+
+.theme-toggle{
+  width:44px;height:26px;border-radius:999px;border:1px solid var(--line);
+  position:relative;flex-shrink:0;
+}
+.theme-toggle .knob{
+  position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;
+  background:var(--ink);transition:transform .4s var(--ease), background .4s ease;
+  display:flex;align-items:center;justify-content:center;
+}
+.theme-toggle .knob svg{width:12px;height:12px;color:var(--porcelain);}
+[data-theme="dark"] .theme-toggle .knob{transform:translateX(18px);}
+
+.menu-toggle{display:none;flex-direction:column;gap:5px;width:26px;}
+.menu-toggle span{height:2px;width:100%;background:var(--ink);transition:transform .3s ease, opacity .3s ease;}
+
+/* ============================================================
+   5. HERO
+============================================================ */
+.hero{
+  position:relative;height:100vh;min-height:640px;overflow:hidden;
+  display:flex;align-items:flex-end;
+}
+.hero-slide{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  opacity:0;transform:translate3d(0,var(--hero-shift,0px),0) scale(1.08);
+  transition:opacity 1.15s var(--ease), transform 6s linear;
+  will-change:transform;
+}
+.hero-slide-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-slide.is-active{opacity:1;transform:translate3d(0,var(--hero-shift,0px),0) scale(1);z-index:1;animation:hero-scale 9s var(--ease) both;}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:2;
+  background:linear-gradient(180deg, rgba(20,23,27,.15) 0%, rgba(20,23,27,.15) 45%, rgba(20,23,27,.82) 100%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(115deg,rgba(247,244,238,.12) 0 1px,transparent 1px 16%),radial-gradient(circle at 78% 22%,rgba(232,162,39,.24),transparent 20%);
+  background-size:42px 42px,100% 100%;opacity:.62;mix-blend-mode:screen;
+  animation:hero-sheen 14s ease-in-out infinite alternate;
+}
+.hero-content{position:relative;z-index:3;width:100%;padding-bottom:5.5rem;color:#F7F4EE;}
+.hero-content .wrap{display:flex;flex-direction:column;gap:1.9rem;}
+.hero-content .wrap > *{animation:hero-rise .9s var(--ease) both;}
+.hero-content .wrap > :nth-child(1){animation-delay:.16s;}
+.hero-content .wrap > :nth-child(2){animation-delay:.28s;}
+.hero-content .wrap > :nth-child(3){animation-delay:.42s;}
+.hero-content .wrap > :nth-child(4){animation-delay:.56s;}
+.hero-eyebrow{color:rgba(247,244,238,.7);}
+.hero-title{
+  font-size:clamp(2.6rem, 6vw, 5.2rem);
+  line-height:1.02;
+  max-width:16ch;
+  font-weight:500;
+}
+.hero-title em{font-style:italic;font-weight:400;color:var(--amber);}
+.hero-sub{max-width:46ch;font-size:1.05rem;color:rgba(247,244,238,.82);}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;}
+.hero-actions .btn-solid{background:#F7F4EE;color:#14171C;}
+.hero-actions .btn-ghost{border-color:rgba(247,244,238,.4);color:#F7F4EE;}
+
+.hero-controls{
+  position:absolute;bottom:2.4rem;right:32px;z-index:4;
+  display:flex;align-items:center;gap:1.1rem;
+}
+.hero-caption{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;color:rgba(247,244,238,.75);text-align:right;text-transform:uppercase;min-width:180px;}
+.hero-caption b{display:block;font-family:var(--font-display);font-style:italic;font-size:1rem;color:#fff;letter-spacing:0;text-transform:none;margin-bottom:.15em;}
+.hero-arrows{display:flex;gap:.5rem;}
+.hero-arrow{
+  width:42px;height:42px;border-radius:50%;border:1px solid rgba(247,244,238,.4);
+  display:flex;align-items:center;justify-content:center;color:#fff;
+  transition:background .3s ease, border-color .3s ease;
+}
+.hero-arrow:hover{background:rgba(247,244,238,.15);border-color:#fff;transform:translateY(-2px);}
+.hero-arrow svg{width:16px;height:16px;}
+.hero-dots{position:absolute;left:32px;bottom:2.6rem;z-index:4;display:flex;gap:.5rem;}
+.hero-dots button{position:relative;width:26px;height:3px;background:rgba(247,244,238,.35);overflow:hidden;transition:background .3s ease,transform .3s var(--ease);}
+.hero-dots button:hover{transform:scaleX(1.15);}
+.hero-dots button::after{content:"";position:absolute;inset:0;transform:translateX(-105%);background:#fff;}
+.hero-dots button.is-active{background:rgba(247,244,238,.45);}
+.hero-dots button.is-active::after{animation:dot-progress 6.5s linear both;}
+.scroll-cue{
+  position:absolute;left:32px;top:calc(var(--header-h) + 2.2rem);z-index:4;
+  writing-mode:vertical-rl;color:rgba(247,244,238,.65);
+  font-family:var(--font-mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
+  display:flex;align-items:center;gap:.7em;
+}
+.scroll-cue::after{content:"";width:1px;height:46px;background:rgba(247,244,238,.5);}
+.scroll-cue{animation:cue-float 2.8s ease-in-out infinite;}
+
+/* ============================================================
+   6. STATEMENT
+============================================================ */
+.statement{padding:8.5rem 0 6rem;}
+.statement blockquote{
+  font-family:var(--font-display);font-style:italic;font-weight:400;
+  font-size:clamp(1.6rem, 3.4vw, 2.6rem);
+  line-height:1.35;max-width:20ch;
+  margin:1.6rem 0 1rem;
+}
+.statement cite{font-style:normal;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;color:var(--ink-soft);}
+.statement-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:4rem;align-items:end;}
+.statement-copy p{max-width:42ch;color:var(--ink-soft);margin-top:1rem;}
+.stat-row{display:flex;gap:2.6rem;flex-wrap:wrap;}
+.stat b{display:block;font-family:var(--font-display);font-size:2.3rem;font-weight:500;}
+.stat span{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);}
+
+/* ============================================================
+   7. STUDIO / ABOUT
+============================================================ */
+.studio{padding:6rem 0;background:var(--paper);transition:background .5s var(--ease);}
+.studio-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:center;}
+.studio-image{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:4/5;border-radius:var(--radius-m);background-size:cover;background-position:center;box-shadow:var(--shadow-lg);will-change:transform;}
+.studio-image::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(110deg,transparent 33%,rgba(255,255,255,.26) 48%,transparent 63%);transform:translateX(-135%) skewX(-18deg);animation:image-sweep 9s var(--ease) 1.8s infinite;}
+.studio-image::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;border:1px solid rgba(255,255,255,.35);border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(20,23,27,.07);}
+.studio-text h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:1.3rem;max-width:14ch;}
+.studio-text > p{color:var(--ink-soft);max-width:52ch;margin-bottom:2.2rem;}
+.capability-list{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 2rem;}
+.capability{display:flex;gap:.9rem;}
+.cap-dot{width:11px;height:11px;border-radius:3px;margin-top:.4em;flex-shrink:0;}
+.capability h4{font-family:var(--font-body);font-size:.98rem;font-weight:700;margin-bottom:.25em;}
+.capability p{font-size:.88rem;color:var(--ink-soft);}
+
+/* ============================================================
+   8. GALLERY + FILTERS
+============================================================ */
+.gallery{padding:7.5rem 0;}
+.gallery-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-bottom:3rem;flex-wrap:wrap;}
+.gallery-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:12ch;}
+.gallery-head p{color:var(--ink-soft);max-width:38ch;}
+
+.filter-bar{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:3rem;}
+.filter-chip{
+  --chip:var(--ink);
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.5rem 1.05rem .5rem .55rem;
+  border-radius:999px;border:1px solid var(--line);
+  background:var(--paper);
+  font-family:var(--font-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;
+  transition:border-color .3s ease, background .3s ease, transform .3s ease;
+}
+.filter-chip:hover{transform:translateY(-2px);}
+.filter-chip .dot{width:13px;height:13px;border-radius:4px;background:var(--chip);}
+
+/* Commenting out original categories */
+/* .filter-chip[data-filter="residential"]{--chip:var(--amber);}
+.filter-chip[data-filter="commercial"]{--chip:var(--blue);}
+.filter-chip[data-filter="interiors"]{--chip:var(--rust);}
+.filter-chip[data-filter="landscape"]{--chip:var(--sage);} */
+
+/* New Categories */
+.filter-chip[data-filter="exterior"]{--chip:var(--amber);}
+.filter-chip[data-filter="interior"]{--chip:var(--rust);}
+
+.filter-chip.is-active{border-color:var(--chip);background:rgba(20,23,27,.05);}
+[data-theme="dark"] .filter-chip.is-active{background:rgba(242,239,232,.08);}
+
+.project-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;
+}
+.project-card{
+  --accent:var(--ink);
+  position:relative;isolation:isolate;border:1px solid rgba(255,255,255,.22);border-radius:var(--radius-m);overflow:hidden;
+  background:var(--accent);
+  cursor:pointer;transition:opacity .4s ease, transform .35s var(--ease), box-shadow .4s ease;
+  box-shadow:var(--shadow-sm);
+  will-change:transform;
+}
+.project-card::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(circle at var(--pointer-x,50%) var(--pointer-y,35%),rgba(255,255,255,.3),transparent 34%);opacity:0;transition:opacity .35s ease;}
+.project-card::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;border:1px solid rgba(255,255,255,.26);border-radius:inherit;opacity:.45;transition:opacity .35s ease;}
+.project-card:hover{transform:translateY(-8px);box-shadow:0 26px 50px -25px rgba(20,23,27,.52);}
+.project-card:hover::before{opacity:1;}
+.project-card:hover::after{opacity:.9;}
+.project-card.card-hidden{opacity:0;transform:scale(.9)!important;pointer-events:none;position:absolute;visibility:hidden;}
+
+/* Commenting out original categories */
+/* .project-card[data-category="residential"]{--accent:var(--amber);}
+.project-card[data-category="commercial"]{--accent:var(--blue);}
+.project-card[data-category="interiors"]{--accent:var(--rust);}
+.project-card[data-category="landscape"]{--accent:var(--sage);} */
+
+/* New Categories */
+.project-card[data-category="exterior"]{--accent:var(--amber);}
+.project-card[data-category="interior"]{--accent:var(--rust);}
+
+.card-media{aspect-ratio:4/5;background-size:cover;background-position:center;position:relative;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .6s ease;}
+.project-card:hover .card-media{transform:scale(1.075);filter:saturate(1.08);}
+.card-media::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg, rgba(20,23,27,0) 40%, rgba(20,23,27,.85) 100%);
+}
+.card-blueprint{position:absolute;top:14px;right:14px;width:64px;height:64px;color:#fff;opacity:0;transition:opacity .4s ease;z-index:2;}
+.project-card:hover .card-blueprint{opacity:.85;}
+.card-body{position:absolute;left:0;right:0;bottom:0;padding:1.3rem 1.4rem;color:#fff;z-index:2;}
+.card-body > *{transition:transform .45s var(--ease),opacity .45s var(--ease);}
+.project-card:hover .card-body > *{transform:translateY(-3px);}
+.project-card:hover .card-body > :nth-child(2){transition-delay:.035s;}
+.project-card:hover .card-body > :nth-child(3){transition-delay:.07s;}
+.card-tag{
+  display:inline-block;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:.28em .7em;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(6px);
+  margin-bottom:.7em;
+}
+.card-body h3{font-size:1.3rem;font-weight:500;margin-bottom:.2em;}
+.card-meta{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.04em;color:rgba(255,255,255,.75);}
+.card-view{
+  position:absolute;top:14px;left:14px;width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.16);backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:center;color:#fff;z-index:2;
+  opacity:0;transform:translateY(-6px);transition:opacity .3s ease, transform .3s ease;
+}
+.project-card:hover .card-view{opacity:1;transform:none;}
+.card-view svg{width:15px;height:15px;}
+
+/* ============================================================
+   8B. LOGO DESIGN SHOWCASE
+============================================================ */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.8rem;
+}
+.logo-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  transition: transform .35s var(--ease), box-shadow .4s ease, border-color .3s ease;
+  box-shadow: var(--shadow-sm);
+}
+.logo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 50px -25px rgba(20,23,27,.32);
+  border-color: var(--blue);
+}
+[data-theme="dark"] .logo-card:hover {
+  border-color: var(--blue);
+}
+[data-theme="dark"] .logo-card img {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+.logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.05));
+  transition: transform .4s var(--ease);
+}
+.logo-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ============================================================
+   9. LIGHTBOX
+============================================================ */
+.lightbox{
+  position:fixed;inset:0;z-index:500;
+  display:flex;align-items:center;justify-content:center;
+  padding:5vh 4vw;
+  background:rgba(10,11,14,.88);
+  opacity:0;visibility:hidden;transition:opacity .35s ease, visibility 0s linear .35s;
+}
+.lightbox.is-open{opacity:1;visibility:visible;transition:opacity .35s ease;}
+.lightbox-inner{
+  background:var(--paper);color:var(--ink);border-radius:var(--radius-m);
+  width:100%;max-width:1040px;max-height:88vh;overflow:auto;
+  display:grid;grid-template-columns:1.2fr 1fr;
+  transform:translateY(20px);transition:transform .4s var(--ease);
+}
+.lightbox.is-open .lightbox-inner{transform:none;}
+.lb-media{position:relative;background:var(--ink);min-height:340px;}
+.lb-slides{position:absolute;inset:0;}
+.lb-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.045);transition:opacity .5s ease,transform .8s var(--ease);}
+.lb-slide.is-active{opacity:1;transform:scale(1);}
+.lb-arrows{position:absolute;bottom:16px;right:16px;display:flex;gap:.5rem;z-index:2;}
+.lb-arrow{width:38px;height:38px;border-radius:50%;background:rgba(20,23,27,.45);color:#fff;display:flex;align-items:center;justify-content:center;}
+.lb-arrow:hover{background:rgba(20,23,27,.7);}
+.lb-arrow svg{width:15px;height:15px;}
+.lb-dots{position:absolute;bottom:16px;left:16px;display:flex;gap:.4rem;z-index:2;}
+.lb-dots button{width:18px;height:3px;background:rgba(255,255,255,.4);}
+.lb-dots button.is-active{background:#fff;}
+.lb-info{padding:2.4rem;display:flex;flex-direction:column;}
+.lb-tag{align-self:flex-start;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:.3em .8em;border-radius:999px;margin-bottom:1.1rem;color:#fff;}
+.lb-info h3{font-size:1.8rem;margin-bottom:.6rem;}
+.lb-info p.desc{color:var(--ink-soft);margin-bottom:1.6rem;}
+.lb-specs{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.4rem;margin-top:auto;padding-top:1.6rem;border-top:1px solid var(--line);}
+.lb-specs div span{display:block;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.3em;}
+.lb-specs div b{font-family:var(--font-mono);font-size:.92rem;font-weight:500;}
+.lb-close{
+  position:fixed;top:5vh;right:4vw;transform:translateY(-56px);
+  width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;
+  display:flex;align-items:center;justify-content:center;z-index:2;
+}
+.lb-close svg{width:18px;height:18px;}
+
+/* ============================================================
+   9B. RENDER / REALITY COMPARE SLIDER
+============================================================ */
+.compare{padding:7.5rem 0;background:var(--paper);transition:background .5s var(--ease);}
+.compare-head{max-width:46ch;margin-bottom:3rem;}
+.compare-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:1rem 0 1rem;max-width:20ch;}
+.compare-head p{color:var(--ink-soft);}
+.compare-frame{display:flex;flex-direction:column;gap:1.4rem;}
+.compare-stage{transition:opacity .3s var(--ease);}
+.compare-slider{
+  --pos:0%;
+  position:relative;width:100%;aspect-ratio:16/9;
+  border-radius:var(--radius-m);overflow:hidden;box-shadow:var(--shadow-lg);
+  background:var(--ink);user-select:none;
+}
+.compare-media{position:absolute;inset:0;background-size:cover;background-position:center;transition:opacity .25s var(--ease);}
+.compare-before{clip-path:inset(0 calc(100% - var(--pos)) 0 0);}
+.compare-tag{
+  position:absolute;top:16px;z-index:2;
+  font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:.4em 1em;border-radius:999px;color:#fff;background:rgba(20,23,27,.5);backdrop-filter:blur(6px);
+  pointer-events:none;transition:opacity .2s var(--ease);
+}
+.compare-tag-before{left:16px;}
+.compare-tag-after{right:16px;}
+.compare-handle{
+  position:absolute;top:0;bottom:0;left:var(--pos);width:0;z-index:3;
+  pointer-events:none;transform:translateX(-50%);
+}
+.compare-handle::before{
+  content:"";position:absolute;top:0;bottom:0;left:50%;width:2px;
+  background:#fff;transform:translateX(-50%);box-shadow:0 0 0 1px rgba(20,23,27,.25);
+}
+.compare-handle-knob{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:46px;height:46px;border-radius:50%;background:#fff;color:var(--ink);
+  display:flex;align-items:center;justify-content:center;gap:2px;box-shadow:var(--shadow-sm);
+}
+.compare-handle-knob svg{width:13px;height:13px;}
+.compare-range{
+  position:absolute;inset:0;width:100%;height:100%;z-index:4;margin:0;
+  opacity:0;cursor:ew-resize;-webkit-appearance:none;appearance:none;
+}
+.compare-range::-webkit-slider-thumb{-webkit-appearance:none;width:1px;height:100%;background:transparent;}
+.compare-range::-moz-range-thumb{width:1px;height:100%;opacity:0;border:none;background:transparent;}
+.compare-range::-moz-range-track{width:100%;height:100%;background:transparent;border:none;}
+.compare-caption{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.compare-caption-text b{font-family:var(--font-display);font-weight:500;font-size:1.05rem;}
+.compare-caption-text span{display:block;font-family:var(--font-mono);font-size:.76rem;color:var(--ink-soft);margin-top:.2em;}
+.compare-caption-right{display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;}
+.compare-hint{
+  display:inline-flex;align-items:center;gap:.55rem;font-family:var(--font-mono);
+  font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);
+}
+.compare-hint svg{width:15px;height:15px;}
+.compare-nav{display:flex;align-items:center;gap:.7rem;}
+.compare-arrow{
+  width:36px;height:36px;border-radius:50%;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;color:var(--ink);flex:none;
+  transition:background .3s ease,border-color .3s ease;
+}
+.compare-arrow:hover{background:var(--porcelain);border-color:var(--ink);}
+.compare-arrow svg{width:14px;height:14px;}
+.compare-count{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;color:var(--ink-soft);min-width:46px;text-align:center;}
+@media (max-width:720px){
+  .compare-slider{aspect-ratio:4/5;}
+}
+
+/* ============================================================
+   10. PROCESS
+============================================================ */
+.process{padding:7.5rem 0;background:var(--paper);}
+.process-head{max-width:34ch;margin-bottom:3.6rem;}
+.process-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:1rem;}
+.process-head p{color:var(--ink-soft);}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem;}
+.process-step{padding-top:1.8rem;border-top:1px solid var(--line);position:relative;}
+.process-step .num{font-family:var(--font-mono);font-size:.78rem;color:var(--blue);letter-spacing:.05em;display:block;margin-bottom:1rem;}
+.process-step h3{font-size:1.3rem;margin-bottom:.7rem;}
+.process-step p{color:var(--ink-soft);font-size:.94rem;}
+
+/* ============================================================
+   11. CONTACT
+============================================================ */
+.contact{padding:8rem 0;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;}
+.contact-copy h2{font-size:clamp(2rem,4vw,3rem);max-width:11ch;margin-bottom:1.2rem;}
+.contact-copy p{color:var(--ink-soft);max-width:38ch;margin-bottom:2rem;}
+.contact-detail{display:flex;flex-direction:column;gap:.5rem;font-family:var(--font-mono);font-size:.85rem;color:var(--ink-soft);}
+.contact-detail a:hover{color:var(--ink);}
+
+.form-wrap{position:relative;}
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important;}
+.form-status{min-height:1.4em;margin-top:.85rem;font-size:.84rem;color:var(--ink-soft);}
+.form-status[data-state="error"]{color:var(--rust);}
+.form-wrap button[disabled]{cursor:wait;opacity:.7;transform:none;}
+.field{margin-bottom:1.3rem;}
+.field label{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.5em;}
+.field input,.field textarea,.field select{
+  width:100%;border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:.85em 1em;background:var(--paper);transition:border-color .3s ease;
+}
+.field option{background:var(--paper);color:var(--ink);}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue);}
+.field input:invalid:not(:placeholder-shown),.field textarea:invalid:not(:placeholder-shown){border-color:var(--rust);}
+.field textarea{resize:vertical;min-height:110px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-confirm{
+  display:none;flex-direction:column;align-items:flex-start;gap:1rem;justify-content:center;height:100%;
+  padding:2.4rem;border:1px solid var(--line);border-radius:var(--radius-m);
+}
+.form-wrap.is-sent .form-confirm{animation:confirmation-in .65s var(--ease) both;}
+.form-confirm .dot-mark{width:40px;height:40px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;color:#fff;}
+.form-confirm h3{font-size:1.3rem;}
+.form-confirm p{color:var(--ink-soft);font-size:.92rem;max-width:34ch;}
+.form-wrap.is-sent form{display:none;}
+.form-wrap.is-sent .form-confirm{display:flex;}
+
+/* ============================================================
+   12. FOOTER
+============================================================ */
+footer{padding:4.5rem 0 2.5rem;background:var(--ink);color:var(--porcelain);}
+[data-theme="dark"] footer{background:#0C0E12;color:var(--ink);}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3.2rem;margin-bottom:2.2rem;border-bottom:1px solid rgba(247,244,238,.14);}
+.footer-brand .logo{margin-bottom:1rem;display:inline-flex;}
+.footer-brand p{color:rgba(247,244,238,.6);max-width:30ch;font-size:.92rem;}
+.footer-col h5{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(247,244,238,.55);margin-bottom:1rem;}
+.footer-col ul{display:flex;flex-direction:column;gap:.6rem;font-size:.92rem;}
+.footer-col a:hover{color:var(--amber);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-family:var(--font-mono);font-size:.75rem;color:rgba(247,244,238,.5);}
+
+/* ============================================================
+   13. RESPONSIVE
+============================================================ */
+@media (max-width:980px){
+  .statement-grid,.studio-grid,.contact-grid{grid-template-columns:1fr;gap:2.6rem;}
+  .studio-image{aspect-ratio:16/9;}
+  .project-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .process-grid{grid-template-columns:1fr;gap:2rem;}
+  .lightbox-inner{grid-template-columns:1fr;}
+  .lb-media{min-height:280px;}
+}
+@media (max-width:720px){
+  .nav-links,.scroll-cue{display:none;}
+  .menu-toggle{display:flex;}
+  .hero-caption{display:none;}
+  .project-grid, .logo-grid{grid-template-columns:1fr;}
+  .capability-list{grid-template-columns:1fr;}
+  .two-col{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;gap:2rem;}
+  nav.primary-nav{position:fixed;top:var(--header-h);left:0;right:0;background:var(--porcelain);
+    flex-direction:column;align-items:flex-start;gap:1.5rem;padding:2rem 32px;
+    transform:translateY(-8px);opacity:0;visibility:hidden;transition:all .3s ease;box-shadow:var(--shadow-sm);}
+  nav.primary-nav.is-open{transform:none;opacity:1;visibility:visible;}
+  .nav-links{display:flex;flex-direction:column;gap:1.1rem;}
+}
+
+/* ============================================================
+   14. MOTION SYSTEM
+============================================================ */
+.hero-caption.is-updating{animation:caption-rise .42s var(--ease) both;}
+.process-step::before{content:"";position:absolute;top:-1px;left:0;width:100%;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .75s var(--ease);}
+.process-step.is-visible::before{transform:scaleX(1);}
+.capability{transition:transform .35s var(--ease);}
+.capability:hover{transform:translateX(5px);}
+.stat-number{font-variant-numeric:tabular-nums;}
+.btn{position:relative;overflow:hidden;isolation:isolate;}
+.btn > *{position:relative;z-index:1;}
+.btn::after{content:"";position:absolute;top:-35%;bottom:-35%;left:-35%;width:22%;z-index:0;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);transform:translateX(-310%) skewX(-24deg);transition:transform .72s var(--ease);}
+.btn:hover::after{transform:translateX(850%) skewX(-24deg);}
+.compare-arrow:hover{transform:translateY(-2px);}
+.compare-handle-knob{animation:compare-breathe 2.8s ease-in-out infinite;}
+.compare-slider:hover .compare-handle-knob,.compare-slider:focus-within .compare-handle-knob{animation:none;}
+@keyframes hero-scale{from{transform:translate3d(0,var(--hero-shift,0px),0) scale(1.09);}to{transform:translate3d(0,var(--hero-shift,0px),0) scale(1);}}
+@keyframes hero-rise{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:none;}}
+@keyframes caption-rise{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+@keyframes cue-float{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
+@keyframes dot-progress{from{transform:translateX(-105%);}to{transform:translateX(0);}}
+@keyframes confirmation-in{from{opacity:0;transform:translateY(14px) scale(.98);}to{opacity:1;transform:none;}}
+@keyframes hero-sheen{from{background-position:0 0,0 0;}to{background-position:42px 42px,0 0;}}
+@keyframes blueprint-drift{0%,100%{transform:translate3d(0,0,0) rotate(-1deg);}50%{transform:translate3d(-10px,12px,0) rotate(1deg);}}
+@keyframes image-sweep{0%,64%{transform:translateX(-135%) skewX(-18deg);}82%,100%{transform:translateX(135%) skewX(-18deg);}}
+@keyframes compare-breathe{0%,100%{transform:translate(-50%,-50%) scale(1);}50%{transform:translate(-50%,-50%) scale(1.08);}}
+@media (prefers-reduced-motion:reduce){
+  .hero-blueprint,.hero::after,.studio-image::before,.compare-handle-knob{animation:none;}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important;}
+}
+
+/* ============================================================
+   ENHANCED ANIMATIONS & EFFECTS
+============================================================ */
+
+/* 1. Floating Effect for Hero Blueprint */
+.hero-blueprint {
+  animation: blueprint-drift 11s ease-in-out infinite, float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 2. Enhanced Scroll Reveal (Adds a smooth blur and scale-in effect) */
+[data-reveal] {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translate3d(0, 40px, 0) scale(0.98);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease), filter 0.8s var(--ease);
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* 3. Dynamic Button Hover (Glow effect and slight scale) */
+.btn-solid {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.btn-solid:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 25px -10px rgba(38, 83, 199, 0.4);
+}
+
+/* 4. Deepened Glassmorphism for Header */
+header.is-scrolled {
+  background: rgba(247, 244, 238, 0.65);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+}
+
+/* 5. Image Pan on Project Cards */
+.card-media {
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.6s ease;
+}
+.project-card:hover .card-media {
+  transform: scale(1.12) rotate(1deg); /* Slightly deeper zoom with a micro-rotation */
+  filter: saturate(1.2) brightness(1.1);
+}
+
+/* 6. Pulse effect for the Compare Slider Knob */
+.compare-handle-knob {
+  animation: compare-breathe 2.5s infinite alternate ease-in-out;
+}
+@keyframes compare-breathe {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); transform: translate(-50%, -50%) scale(1); }
+  100% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); transform: translate(-50%, -50%) scale(1.1); }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#work">Skip to selected work</a>
+
+<div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="wrap">
+    <a href="#top" class="logo">
+      <img src="main-site-logo/LOGO.png" alt="Sthhapatya Architects and Associates Logo">
+      STHHAPATYA
+    </a>
+    <nav class="primary-nav" id="primaryNav">
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#logos">Logos</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="knob">
+            <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg>
+          </span>
+        </button>
+      </div>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <!-- VIDEO HERO SLIDE -->
+  <div class="hero-slide is-active" data-eyebrow="Exterior" data-title="House Intro" data-loc="Architectural Film">
+    <video class="hero-slide-video" autoplay loop muted playsinline preload="auto" poster="images/hero-slide/hero slide 1.JPG">
+      <source src="video/hero-slide/houseIntro.mp4" type="video/mp4">
+      <source src="./video/hero-slide/houseIntro.mp4" type="video/mp4">
+      <source src="video/hero-slide/houseintro.mp4" type="video/mp4">
+      <source src="images/hero-slide/houseIntro.mp4" type="video/mp4">
+      <source src="houseIntro.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <div class="hero-slide" data-eyebrow="Exterior" data-title="Evening Facade" data-loc="Our Project" style="background-image:url('images/hero-slide/hero slide 1.JPG')"></div>
+  <div class="hero-slide" data-eyebrow="Commercial" data-title="North Light Pavilion" data-loc="Copenhagen, Denmark" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=75')"></div>
+  <div class="hero-slide" data-eyebrow="Landscape" data-title="Ridge Line Gardens" data-loc="Queenstown, New Zealand" style="background-image:url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1800&q=75')"></div>
+
+  <svg class="hero-blueprint blueprint-svg draw-in" viewBox="0 0 300 220" fill="none">
+    <path d="M20 190 L20 70 L150 20 L280 70 L280 190 Z"/>
+    <path d="M20 190 L280 190"/>
+    <path d="M90 190 L90 120 L140 120 L140 190"/>
+    <line x1="170" y1="190" x2="170" y2="130"/>
+    <circle cx="170" cy="100" r="14"/>
+  </svg>
+
+  <span class="scroll-cue">Scroll to explore</span>
+
+  <div class="hero-content">
+    <div class="wrap">
+      <span class="eyebrow hero-eyebrow">Architecture, Interior &amp; Brand Design Studio</span>
+      
+      <!-- Main Hero Header -->
+      <h1 class="hero-title">Sthhapatya<br><em>Architects &amp; Associates</em></h1>
+      
+      <!-- Sub-headline -->
+      <p class="hero-sub" style="font-size: 1.25rem; font-weight: 500; color: #fff; margin-bottom: 0.5rem;">
+        We draft space, light, and the way people move through it.
+      </p>
+      
+      <p class="hero-sub">Working across exterior, interior, and brand design projects — from first sketch to final punch list.</p>
+      
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-solid">View Work</a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots"></div>
+
+  <div class="hero-controls">
+    <div class="hero-caption" id="heroCaption">
+      <b>Evening Facade</b>
+      Exterior · Our Project
+    </div>
+    <div class="hero-arrows">
+      <button class="hero-arrow" id="heroPrev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="hero-arrow" id="heroNext" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATEMENT ============ -->
+<section class="statement">
+  <div class="wrap statement-grid">
+    <div data-reveal>
+      <span class="eyebrow">Our Approach</span>
+      <blockquote>"Good design disappears into how well a life fits inside it."</blockquote>
+      <cite>— Elena Voss, Founding Principal</cite>
+    </div>
+    <div class="statement-copy" data-reveal>
+      <div class="stat-row">
+        <div class="stat"><b class="stat-number" data-count="120" data-suffix="+">120+</b><span>Projects Delivered</span></div>
+        <div class="stat"><b class="stat-number" data-count="18">18</b><span>Years in Practice</span></div>
+        <div class="stat"><b class="stat-number" data-count="9">9</b><span>Design Awards</span></div>
+      </div>
+      <p>We treat architecture, interiors, and brand identity as continuous decisions rather than separate hand-offs — the same team carries a project from the first site visit through the last piece of furniture or digital touchpoint.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STUDIO ============ -->
+<section class="studio" id="studio">
+  <div class="wrap studio-grid">
+    <div class="studio-image" data-reveal style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=75')"></div>
+    <div class="studio-text" data-reveal>
+      <span class="eyebrow">The Studio</span>
+      <h2 style="margin-top:1rem;">Small on purpose.</h2>
+      <p>Founded in 2008, Sthhapatya Architects and Associates is deliberately small: every project keeps the same five people from first sketch to final walkthrough, across four disciplines.</p>
+      <div class="capability-list">
+        <div class="capability">
+          <span class="cap-dot" style="background:var(--amber);"></span>
+          <div><h4>Exterior Design</h4><p>New builds and additions.</p></div>
+        </div>
+        <div class="capability">
+          <span class="cap-dot" style="background:var(--blue);"></span>
+          <div><h4>Commercial</h4><p>Workplace, hospitality, retail.</p></div>
+        </div>
+        <div class="capability">
+          <span class="cap-dot" style="background:var(--rust);"></span>
+          <div><h4>Interiors & Branding</h4><p>Interior architecture & brand identities.</p></div>
+        </div>
+        <div class="capability">
+          <span class="cap-dot" style="background:var(--sage);"></span>
+          <div><h4>Landscape</h4><p>Gardens and the ground between buildings.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="work">
+  <div class="wrap">
+    <div class="gallery-head" data-reveal>
+      <h2>Selected Work</h2>
+      <p>Filter by discipline to see how the same ideas move between scales.</p>
+    </div>
+
+    <div class="filter-bar" id="filterBar" data-reveal>
+      <button class="filter-chip is-active" data-filter="all" aria-pressed="true"><span class="dot" style="background:var(--ink);"></span>All Work</button>
+      
+      <!-- COMMENTED OUT AS REQUESTED -->
+      <!-- <button class="filter-chip" data-filter="residential" aria-pressed="false"><span class="dot"></span>Residential</button>
+      <button class="filter-chip" data-filter="commercial" aria-pressed="false"><span class="dot"></span>Commercial</button>
+      <button class="filter-chip" data-filter="interiors" aria-pressed="false"><span class="dot"></span>Interiors</button>
+      <button class="filter-chip" data-filter="landscape" aria-pressed="false"><span class="dot"></span>Landscape</button> -->
+
+      <!-- NEW CATEGORIES -->
+      <button class="filter-chip" data-filter="exterior" aria-pressed="false"><span class="dot"></span>Exterior</button>
+      <button class="filter-chip" data-filter="interior" aria-pressed="false"><span class="dot"></span>Interior</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid"></div>
+  </div>
+</section>
+
+<!-- ============ LOGO DESIGN ============ -->
+<section class="gallery" id="logos" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="gallery-head" data-reveal>
+      <span class="eyebrow">Brand Identity</span>
+      <h2 style="margin-top: 1rem;">Logo Design</h2>
+      <p>A collection of brand identities crafted alongside our spatial work, designed to capture the essence and values of each business.</p>
+    </div>
+    
+    <div class="logo-grid">
+      <div class="logo-card" data-reveal style="--reveal-delay: 0ms">
+        <img src="images/logos/1.png" alt="Ankur Ayurveda and Fertility Center Logo">
+      </div>
+      <div class="logo-card" data-reveal style="--reveal-delay: 100ms">
+        <img src="images/logos/2.png" alt="Shri Sai Hospital Logo">
+      </div>
+      <div class="logo-card" data-reveal style="--reveal-delay: 200ms">
+        <img src="images/logos/33.png" alt="Abstract Wellness Leaf Logo">
+      </div>
+      <div class="logo-card" data-reveal style="--reveal-delay: 300ms">
+        <img src="images/logos/A.png" alt="Ankur Ayurveda Concept Logo">
+      </div>
+      <div class="logo-card" data-reveal style="--reveal-delay: 400ms">
+        <img src="images/logos/01_LOGO.png" alt="eKalpataru Logo">
+      </div>
+      <div class="logo-card" data-reveal style="--reveal-delay: 500ms">
+        <img src="images/logos/RushEat Logo.png" alt="RushEat Logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RENDER / REALITY COMPARE ============ -->
+<section class="compare" id="compare">
+  <div class="wrap">
+    <div class="compare-head" data-reveal>
+      <span class="eyebrow">From Render to Reality</span>
+      <h2>Drag to see the distance between a model and a finished building.</h2>
+      <p>Every project lives as a study in massing and light long before it's framed. Slide across to compare the concept visualization against how each room actually turned out.</p>
+    </div>
+    <div class="compare-frame" data-reveal>
+      <div class="compare-stage" id="compareStage"></div>
+      <div class="compare-caption">
+        <div class="compare-caption-text" id="compareCaptionText">
+          <b>Master Bedroom Suite</b>
+          <span>Residential Interior</span>
+        </div>
+        <div class="compare-caption-right">
+          <span class="compare-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3"/></svg>
+            Drag the slider
+          </span>
+          <div class="compare-nav">
+            <button class="compare-arrow" id="comparePrev" aria-label="Previous comparison"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <span class="compare-count" id="compareCount">01 / 02</span>
+            <button class="compare-arrow" id="compareNext" aria-label="Next comparison"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="process-head" data-reveal>
+      <span class="eyebrow">How a Project Moves</span>
+      <h2 style="margin-top:1rem;">Three stages, one team.</h2>
+      <p>Every project — regardless of scale — moves through the same three stages, with the same people at the table throughout.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step" data-reveal>
+        <span class="num">01 / Site &amp; Brief</span>
+        <h3>Reading the ground first.</h3>
+        <p>We start on site — surveying light, sound, and how the place already wants to be used — alongside a working brief with the client.</p>
+      </div>
+      <div class="process-step" data-reveal>
+        <span class="num">02 / Design Development</span>
+        <h3>Plan, section, and material together.</h3>
+        <p>Layout, structure, and finishes are tested in the same weekly sessions, with the client in the room, not reviewing after the fact.</p>
+      </div>
+      <div class="process-step" data-reveal>
+        <span class="num">03 / Construction to Handover</span>
+        <h3>We stay through the build.</h3>
+        <p>Our team is on site through construction, resolving details in real time rather than leaving them open to interpretation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy" data-reveal>
+      <span class="eyebrow">Get in Touch</span>
+      <h2 style="margin-top:1rem;">Let's design what's next.</h2>
+      <p>Tell us about the site, the brief, or just the problem you're trying to solve. We reply to every inquiry within two business days.</p>
+      <div class="contact-detail">
+        <a href="mailto:hello@sthhapatya.com">hello@sthhapatya.com</a>
+        <a href="tel:+14155550148">+1 415 555 0148</a>
+        <span>San Francisco · Copenhagen</span>
+      </div>
+    </div>
+
+    <div class="form-wrap" id="formWrap" data-reveal>
+      <form id="contactForm" data-endpoint="https://script.google.com/macros/s/AKfycbzXFT1EBgPzhWUIVGMM4MSZV8cTb-X7kKkYi1yc-unIJrJW9ZTGQoN5Rc2v5COt1j05/exec">
+        <div class="form-honeypot" aria-hidden="true">
+          <label for="fWebsite">Website</label>
+          <input id="fWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label for="fName">Name</label>
+            <input id="fName" name="name" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="fEmail">Email</label>
+            <input id="fEmail" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
+          </div>
+        </div>
+        <div class="field">
+          <label for="fType">Project Type</label>
+          <select id="fType" name="projectType">
+            <!-- COMMENTED OUT -->
+            <!-- <option>Residential</option>
+            <option>Commercial</option>
+            <option>Interiors</option>
+            <option>Landscape</option> -->
+
+            <option>Exterior</option>
+            <option>Interior</option>
+            <option>Branding/Logo</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fMessage">Message</label>
+          <textarea id="fMessage" name="message" required placeholder="Tell us about the site and the brief."></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid"><span class="btn-label">Send Message</span></button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite" hidden></p>
+      </form>
+      <div class="form-confirm" role="status" aria-live="polite">
+        <span class="dot-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+        <h3>Message received.</h3>
+        <p>Thank you — we reply to every inquiry within two business days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <img src="main-site-logo/LOGO.png" alt="Sthhapatya Architects and Associates Logo">
+          STHHAPATYA
+        </a>
+        <p>Architecture, interior, and brand design practice working across residential, commercial, interior, and landscape projects.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Studio</h5>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#logos">Logos</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Disciplines</h5>
+        <ul>
+          <!-- COMMENTED OUT -->
+          <!-- <li><a href="#work" data-footer-filter="residential">Residential</a></li>
+          <li><a href="#work" data-footer-filter="commercial">Commercial</a></li>
+          <li><a href="#work" data-footer-filter="interiors">Interiors</a></li>
+          <li><a href="#work" data-footer-filter="landscape">Landscape</a></li> -->
+
+          <li><a href="#work" data-footer-filter="exterior">Exterior</a></li>
+          <li><a href="#work" data-footer-filter="interior">Interior</a></li>
+          <li><a href="#logos">Branding</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sthhapatya Architects and Associates. All rights reserved.</span>
+      <span>Site design &amp; build — Sthhapatya Architects and Associates</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project detail">
+  <button class="lb-close" id="lbClose" aria-label="Close project detail">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="lightbox-inner">
+    <div class="lb-media" id="lbMedia">
+      <div class="lb-slides" id="lbSlides"></div>
+      <div class="lb-arrows">
+        <button class="lb-arrow" id="lbPrev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="lb-arrow" id="lbNext" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+      <div class="lb-dots" id="lbDots"></div>
+    </div>
+    <div class="lb-info">
+      <span class="lb-tag" id="lbTag"></span>
+      <h3 id="lbTitle"></h3>
+      <p class="desc" id="lbDesc"></p>
+      <div class="lb-specs">
+        <div><span>Location</span><b id="lbLoc"></b></div>
+        <div><span>Year</span><b id="lbYear"></b></div>
+        <div><span>Area</span><b id="lbArea"></b></div>
+        <div><span>Discipline</span><b id="lbDiscipline"></b></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- hidden blueprint symbol reused on cards -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="blueprint-mini" viewBox="0 0 300 220">
+    <path d="M20 190 L20 70 L150 20 L280 70 L280 190 Z"/>
+    <path d="M20 190 L280 190"/>
+    <path d="M90 190 L90 120 L140 120 L140 190"/>
+    <line x1="170" y1="190" x2="170" y2="130"/>
+    <circle cx="170" cy="100" r="14"/>
+  </symbol>
+</svg>
+
+<script>
+(function(){
+  "use strict";
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ============ PROJECT DATA ============ */
+  var projects = [
+    // EXTERIOR DESIGNS
+    {
+      title:"Modern Villa", category:"exterior", tagColor:"var(--amber)",
+      location:"Exterior", year:"2024", area:"340 m²",
+      desc:"A modern residential exterior with warm evening lighting.",
+      images:[
+        "images/exterior-design/Exterior render 1.png"
+      ]
+    },
+    {
+      title:"Century Heights", category:"exterior", tagColor:"var(--amber)",
+      location:"Exterior", year:"2024", area:"1,850 m²",
+      desc:"A high-rise residential tower exterior concept.",
+      images:[
+        "images/exterior-design/Exterior render 2.jpg"
+      ]
+    },
+    {
+      title:"Brick Atrium Building", category:"exterior", tagColor:"var(--amber)",
+      location:"Exterior", year:"2023", area:"210 m²",
+      desc:"An institutional building combining classic brick with modern fenestration.",
+      images:[
+        "images/exterior-design/Exterior render 3.jpg"
+      ]
+    },
+    {
+      title:"Elevated Retreat", category:"exterior", tagColor:"var(--amber)",
+      location:"Exterior", year:"2022", area:"480 m²",
+      desc:"An elevated cabin surrounded by nature, designed to minimize site impact.",
+      images:[
+        "images/exterior-design/Exterior render 4.png"
+      ]
+    },
+    // INTERIOR DESIGNS
+    {
+      title:"Classic Floral Bedroom", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2025", area:"24 m²",
+      desc:"An elegant bedroom layout featuring a floral accent wall.",
+      images:[
+        "images/interior-design/Interior render 1.png"
+      ]
+    },
+    {
+      title:"Classic Bedroom Front View", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2025", area:"24 m²",
+      desc:"Detailed front view showing symmetry and classic paneling.",
+      images:[
+        "images/interior-design/Interior render 2.png"
+      ]
+    },
+    {
+      title:"Blush Suite Window", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2024", area:"30 m²",
+      desc:"A soft blush-toned bedroom with comfortable window seating.",
+      images:[
+        "images/interior-design/Interior render 3.png"
+      ]
+    },
+    {
+      title:"Blush Suite Wardrobe", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2024", area:"30 m²",
+      desc:"Spacious built-in wardrobe matching the blush theme.",
+      images:[
+        "images/interior-design/Interior render 4.png"
+      ]
+    },
+    {
+      title:"Luxury Master Suite", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2025", area:"45 m²",
+      desc:"Spacious master bedroom with rich textures and gold partitions.",
+      images:[
+        "images/interior-design/Interior render 5.png"
+      ]
+    },
+    {
+      title:"Minimalist Bedroom", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2025", area:"25 m²",
+      desc:"Clean lines and minimalist interior approach.",
+      images:[
+        "images/interior-design/Interior render 6.png"
+      ]
+    },
+    {
+      title:"Contemporary Suite", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2025", area:"32 m²",
+      desc:"A modern contemporary interior bedroom space.",
+      images:[
+        "images/interior-design/Interior render 7.png"
+      ]
+    },
+    {
+      title:"Tropical Modern Master", category:"interior", tagColor:"var(--rust)",
+      location:"Interior", year:"2024", area:"40 m²",
+      desc:"A serene bedroom featuring botanical headboard art and soft fabrics.",
+      images:[
+        "images/interior-design/Interior render 8.png"
+      ]
+    }
+  ];
+
+  /* Updated Category Labels */
+  var categoryLabel = {
+    exterior:"Exterior", 
+    interior:"Interior"
+    /* residential:"Residential", commercial:"Commercial", interiors:"Interiors", landscape:"Landscape" */
+  };
+
+  /* ============ RENDER PROJECT GRID ============ */
+  var grid = document.getElementById('projectGrid');
+  projects.forEach(function(p, i){
+    var card = document.createElement('article');
+    card.className = 'project-card';
+    card.setAttribute('data-category', p.category);
+    card.setAttribute('data-index', i);
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', 'View project: ' + p.title);
+    card.setAttribute('data-reveal','');
+    card.style.setProperty('--reveal-delay', (i % 3) * 90 + 'ms');
+    card.innerHTML =
+      '<div class="card-media" style="background-image:url(\'' + p.images[0] + '\')"></div>' +
+      '<svg class="card-blueprint"><use href="#blueprint-mini"></use></svg>' +
+      '<span class="card-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>' +
+      '<div class="card-body">' +
+        '<span class="card-tag">' + categoryLabel[p.category] + '</span>' +
+        '<h3>' + p.title + '</h3>' +
+        '<div class="card-meta">' + p.location + ' · ' + p.year + '</div>' +
+      '</div>';
+    grid.appendChild(card);
+  });
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.project-card'));
+
+  /* ============ CARD 3D TILT ============ */
+  if(!reduceMotion){
+    cards.forEach(function(card){
+      card.addEventListener('mousemove', function(e){
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left, y = e.clientY - rect.top;
+        var rx = ((y / rect.height) - 0.5) * -9;
+        var ry = ((x / rect.width) - 0.5) * 9;
+        card.style.setProperty('--pointer-x', (x / rect.width) * 100 + '%');
+        card.style.setProperty('--pointer-y', (y / rect.height) * 100 + '%');
+        card.style.transform = 'perspective(900px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) translateY(-6px)';
+      });
+      card.addEventListener('mouseleave', function(){ card.style.transform=''; });
+    });
+  }
+
+  /* ============ FILTERING ============ */
+  var filterBar = document.getElementById('filterBar');
+  function applyFilter(filter){
+    cards.forEach(function(card){
+      var match = filter === 'all' || card.getAttribute('data-category') === filter;
+      if(match){
+        card.style.display = '';
+        requestAnimationFrame(function(){ card.classList.remove('card-hidden'); });
+      } else {
+        card.classList.add('card-hidden');
+        setTimeout(function(){ if(card.classList.contains('card-hidden')) card.style.display = 'none'; }, 400);
+      }
+    });
+  }
+  filterBar.addEventListener('click', function(e){
+    var btn = e.target.closest('.filter-chip');
+    if(!btn) return;
+    filterBar.querySelectorAll('.filter-chip').forEach(function(b){
+      b.classList.toggle('is-active', b === btn);
+      b.setAttribute('aria-pressed', String(b === btn));
+    });
+    applyFilter(btn.getAttribute('data-filter'));
+  });
+  document.querySelectorAll('[data-footer-filter]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var val = link.getAttribute('data-footer-filter');
+      var target = filterBar.querySelector('[data-filter="' + val + '"]');
+      if(target) target.click();
+    });
+  });
+
+  /* ============ LIGHTBOX ============ */
+  var lightbox = document.getElementById('lightbox');
+  var lbDots = document.getElementById('lbDots');
+  var lbTag = document.getElementById('lbTag');
+  var lbTitle = document.getElementById('lbTitle');
+  var lbDesc = document.getElementById('lbDesc');
+  var lbLoc = document.getElementById('lbLoc');
+  var lbYear = document.getElementById('lbYear');
+  var lbArea = document.getElementById('lbArea');
+  var lbDiscipline = document.getElementById('lbDiscipline');
+  var lastFocused = null;
+  var currentProject = null;
+  var currentSlide = 0;
+
+  function openLightbox(index){
+    currentProject = projects[index];
+    currentSlide = 0;
+    lbTag.textContent = categoryLabel[currentProject.category];
+    lbTag.style.background = currentProject.tagColor;
+    lbTitle.textContent = currentProject.title;
+    lbDesc.textContent = currentProject.desc;
+    lbLoc.textContent = currentProject.location;
+    lbYear.textContent = currentProject.year;
+    lbArea.textContent = currentProject.area;
+    lbDiscipline.textContent = categoryLabel[currentProject.category];
+
+    var lbSlides = document.getElementById('lbSlides');
+    lbSlides.innerHTML = '';
+    lbDots.innerHTML = '';
+    currentProject.images.forEach(function(src, i){
+      var slide = document.createElement('div');
+      slide.className = 'lb-slide' + (i === 0 ? ' is-active' : '');
+      slide.style.backgroundImage = "url('" + src + "')";
+      lbSlides.appendChild(slide);
+      var dot = document.createElement('button');
+      dot.className = 'lb-dot' + (i === 0 ? ' is-active' : '');
+      dot.setAttribute('aria-label', 'Image ' + (i+1));
+      dot.addEventListener('click', function(){ goToLbSlide(i); });
+      lbDots.appendChild(dot);
+    });
+
+    lastFocused = document.activeElement;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lbClose').focus();
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+    if(lastFocused) lastFocused.focus();
+  }
+  function goToLbSlide(i){
+    var slides = document.getElementById('lbSlides').querySelectorAll('.lb-slide');
+    var dots = lbDots.querySelectorAll('button');
+    currentSlide = (i + slides.length) % slides.length;
+    slides.forEach(function(s, idx){ s.classList.toggle('is-active', idx === currentSlide); });
+    dots.forEach(function(d, idx){ d.classList.toggle('is-active', idx === currentSlide); });
+  }
+
+  cards.forEach(function(card){
+    card.addEventListener('click', function(){ openLightbox(Number(card.getAttribute('data-index'))); });
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLightbox(Number(card.getAttribute('data-index'))); }
+    });
+  });
+  document.getElementById('lbClose').addEventListener('click', closeLightbox);
+  document.getElementById('lbPrev').addEventListener('click', function(){ goToLbSlide(currentSlide - 1); });
+  document.getElementById('lbNext').addEventListener('click', function(){ goToLbSlide(currentSlide + 1); });
+  lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', function(e){
+    if(!lightbox.classList.contains('is-open')) return;
+    if(e.key === 'Escape') closeLightbox();
+    if(e.key === 'ArrowLeft') goToLbSlide(currentSlide - 1);
+    if(e.key === 'ArrowRight') goToLbSlide(currentSlide + 1);
+  });
+
+  /* ============ HERO SLIDER ============ */
+  var heroSlides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
+  var heroDotsWrap = document.getElementById('heroDots');
+  var heroCaption = document.getElementById('heroCaption');
+  var heroIndex = 0, heroTimer;
+
+  heroSlides.forEach(function(s, i){
+    var dot = document.createElement('button');
+    dot.className = 'hero-dot' + (i === 0 ? ' is-active' : '');
+    dot.setAttribute('aria-label', 'Slide ' + (i+1));
+    dot.addEventListener('click', function(){ goToHero(i); resetHeroTimer(); });
+    heroDotsWrap.appendChild(dot);
+  });
+
+  function goToHero(i){
+    heroIndex = (i + heroSlides.length) % heroSlides.length;
+    heroSlides.forEach(function(s, idx){ 
+      var isActive = idx === heroIndex;
+      s.classList.toggle('is-active', isActive); 
+      var v = s.querySelector('video');
+      if(v){
+        if(isActive){ v.play().catch(function(){}); } else { v.pause(); }
+      }
+    });
+    heroDotsWrap.querySelectorAll('button').forEach(function(d, idx){ d.classList.toggle('is-active', idx === heroIndex); });
+    var active = heroSlides[heroIndex];
+    heroCaption.classList.remove('is-updating');
+    if(!reduceMotion){ void heroCaption.offsetWidth; heroCaption.classList.add('is-updating'); }
+    heroCaption.innerHTML = '<b>' + active.getAttribute('data-title') + '</b>' + active.getAttribute('data-eyebrow') + ' · ' + active.getAttribute('data-loc');
+  }
+  function resetHeroTimer(){
+    clearInterval(heroTimer);
+    if(!reduceMotion){ heroTimer = setInterval(function(){ goToHero(heroIndex + 1); }, 6500); }
+  }
+  document.getElementById('heroPrev').addEventListener('click', function(){ goToHero(heroIndex - 1); resetHeroTimer(); });
+  document.getElementById('heroNext').addEventListener('click', function(){ goToHero(heroIndex + 1); resetHeroTimer(); });
+  var heroEl = document.querySelector('.hero');
+  heroEl.addEventListener('mouseenter', function(){ clearInterval(heroTimer); });
+  heroEl.addEventListener('mouseleave', resetHeroTimer);
+  resetHeroTimer();
+
+  // Ensure active hero video starts playing immediately on load
+  document.querySelectorAll('.hero-slide video').forEach(function(v){
+    v.muted = true;
+    v.play().catch(function(e){});
+  });
+
+  /* ============ RENDER / REALITY COMPARE SLIDER ============ */
+  var compareItems = [
+    {
+      type:"pair",
+      title:"Master Bedroom Suite",
+      subtitle:"Residential Interior",
+      rendered:"images/bedroom-rendered.jpg",
+      after:"images/bedroom-actual.jpg"
+    },
+    {
+      type:"triplet",
+      title:"Window Seat Bedroom",
+      subtitle:"Residential Interior",
+      original:"images/bedroom2-original.jpg",
+      rendered:"images/bedroom2-rendered.jpg",
+      after:"images/bedroom2-actual.jpg"
+    }
+  ];
+  var compareIndex = 0;
+  var compareStage = document.getElementById('compareStage');
+  var compareCaptionText = document.getElementById('compareCaptionText');
+  var compareCount = document.getElementById('compareCount');
+  var comparePrev = document.getElementById('comparePrev');
+  var compareNext = document.getElementById('compareNext');
+
+  if(compareStage){
+    var pad2 = function(n){ return n < 10 ? '0' + n : '' + n; };
+
+    var sliderBlockHTML = function(uid, startPos, ariaLabel){
+      return ''
+        + '<div class="compare-slider" id="' + uid + '" style="--pos:' + startPos + '%;">'
+        +   '<div class="compare-media compare-after" id="' + uid + '-after"></div>'
+        +   '<div class="compare-media compare-before" id="' + uid + '-before"></div>'
+        +   '<span class="compare-tag compare-tag-before" id="' + uid + '-tagBefore"></span>'
+        +   '<span class="compare-tag compare-tag-after" id="' + uid + '-tagAfter"></span>'
+        +   '<div class="compare-handle" aria-hidden="true">'
+        +     '<span class="compare-handle-knob">'
+        +       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 6l-6 6 6 6"/></svg>'
+        +       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg>'
+        +     '</span>'
+        +   '</div>'
+        +   '<input type="range" class="compare-range" id="' + uid + '-range" min="0" max="100" value="' + startPos + '" step="0.1" aria-label="' + ariaLabel + '">'
+        + '</div>';
+    };
+
+    var bindSlider = function(uid, item){
+      var slider = document.getElementById(uid);
+      var range = document.getElementById(uid + '-range');
+      var beforeEl = document.getElementById(uid + '-before');
+      var afterEl = document.getElementById(uid + '-after');
+      var tagBeforeEl = document.getElementById(uid + '-tagBefore');
+      var tagAfterEl = document.getElementById(uid + '-tagAfter');
+      if(!slider || !range) return;
+
+      var isTriplet = item.type === 'triplet';
+      var stage = 0; // 0: original -> rendered, 1: rendered -> after
+
+      var setPos = function(v){ slider.style.setProperty('--pos', v + '%'); };
+
+      var applyStage = function(){
+        if(isTriplet && stage === 0){
+          beforeEl.style.backgroundImage = "url('" + item.original + "')";
+          afterEl.style.backgroundImage = "url('" + item.rendered + "')";
+          tagBeforeEl.textContent = 'Original';
+          tagAfterEl.textContent = 'Concept Render';
+        } else {
+          beforeEl.style.backgroundImage = "url('" + item.rendered + "')";
+          afterEl.style.backgroundImage = "url('" + item.after + "')";
+          tagBeforeEl.textContent = 'Concept Render';
+          tagAfterEl.textContent = 'Completed';
+        }
+      };
+
+      applyStage();
+      setPos(range.value);
+
+      range.addEventListener('input', function(){
+        setPos(parseFloat(range.value));
+      });
+
+      if(isTriplet){
+        var checkBoundary = function(){
+          var v = parseFloat(range.value);
+          if(stage === 0 && v <= 0.5){
+            stage = 1;
+            applyStage();
+            range.value = 100;
+            setPos(100);
+          } else if(stage === 1 && v >= 99.5){
+            stage = 0;
+            applyStage();
+            range.value = 0;
+            setPos(0);
+          }
+        };
+        range.addEventListener('pointerup', checkBoundary);
+        range.addEventListener('keyup', checkBoundary);
+      }
+    };
+
+    var renderCompare = function(i, animate){
+      var item = compareItems[i];
+      var apply = function(){
+        var startPos = item.type === 'triplet' ? 100 : 50;
+        var ariaLabel = item.type === 'triplet'
+          ? 'Drag to compare the original room, concept render, and completed room. Drag to the end and release to move to the next comparison.'
+          : 'Drag to compare the concept render and the completed room';
+        compareStage.innerHTML = sliderBlockHTML('sliderA', startPos, ariaLabel);
+        bindSlider('sliderA', item);
+        compareCaptionText.innerHTML = '<b>' + item.title + '</b><span>' + item.subtitle + '</span>';
+        compareCount.textContent = pad2(i + 1) + ' / ' + pad2(compareItems.length);
+      };
+      if(animate){
+        compareStage.style.opacity = 0;
+        setTimeout(function(){
+          apply();
+          compareStage.style.opacity = 1;
+        }, 260);
+      } else {
+        apply();
+      }
+    };
+
+    renderCompare(compareIndex, false);
+
+    if(comparePrev){
+      comparePrev.addEventListener('click', function(){
+        compareIndex = (compareIndex - 1 + compareItems.length) % compareItems.length;
+        renderCompare(compareIndex, true);
+      });
+    }
+    if(compareNext){
+      compareNext.addEventListener('click', function(){
+        compareIndex = (compareIndex + 1) % compareItems.length;
+        renderCompare(compareIndex, true);
+      });
+    }
+  }
+
+  /* ============ THEME TOGGLE ============ */
+  var root = document.documentElement;
+  var themeToggle = document.getElementById('themeToggle');
+  var storedTheme;
+  try { storedTheme = window.localStorage.getItem('sthhapatya-theme'); } catch(err) { storedTheme = null; }
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+  root.setAttribute('data-theme', initialTheme);
+  themeToggle.setAttribute('aria-pressed', String(initialTheme === 'dark'));
+  themeToggle.addEventListener('click', function(){
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    root.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    themeToggle.setAttribute('aria-pressed', String(!isDark));
+    try { window.localStorage.setItem('sthhapatya-theme', isDark ? 'light' : 'dark'); } catch(err){}
+  });
+
+  /* ============ MOBILE MENU ============ */
+  var menuToggle = document.getElementById('menuToggle');
+  var primaryNav = document.getElementById('primaryNav');
+  menuToggle.addEventListener('click', function(){
+    var open = primaryNav.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+  primaryNav.querySelectorAll('.nav-links a').forEach(function(link){
+    link.addEventListener('click', function(){ primaryNav.classList.remove('is-open'); menuToggle.setAttribute('aria-expanded','false'); });
+  });
+
+  /* ============ HEADER SCROLL STATE + PROGRESS BAR ============ */
+  var header = document.getElementById('siteHeader');
+  var progressBar = document.getElementById('progressBar');
+  function onScroll(){
+    header.classList.toggle('is-scrolled', window.scrollY > 40);
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  /* ============ SCROLL REVEAL ============ */
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.15 });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('is-visible'); });
+  }
+
+  /* ============ STAT COUNTERS ============ */
+  var statNumbers = document.querySelectorAll('.stat-number[data-count]');
+  function animateStat(el){
+    if(el.getAttribute('data-counted') === 'true') return;
+    el.setAttribute('data-counted', 'true');
+    var target = Number(el.getAttribute('data-count')) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    if(reduceMotion){ el.textContent = target + suffix; return; }
+    var startedAt = null;
+    var duration = 1150;
+    function tick(now){
+      if(!startedAt) startedAt = now;
+      var progress = Math.min((now - startedAt) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 4);
+      el.textContent = Math.round(target * eased) + suffix;
+      if(progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if('IntersectionObserver' in window){
+    var statObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ animateStat(entry.target); statObserver.unobserve(entry.target); }
+      });
+    }, { threshold:.65 });
+    statNumbers.forEach(function(el){ statObserver.observe(el); });
+  } else {
+    statNumbers.forEach(animateStat);
+  }
+
+  /* ============ CONTACT FORM ============ */
+  var contactForm = document.getElementById('contactForm');
+  var formWrap = document.getElementById('formWrap');
+  var formStatus = document.getElementById('formStatus');
+  var formSubmit = contactForm.querySelector('button[type="submit"]');
+  var formSubmitLabel = formSubmit.querySelector('.btn-label');
+  var formEndpoint = contactForm.getAttribute('data-endpoint');
+  function setFormStatus(message, state){
+    formStatus.textContent = message;
+    formStatus.dataset.state = state || '';
+    formStatus.hidden = !message;
+  }
+  contactForm.addEventListener('submit', async function(e){
+    e.preventDefault();
+    if(!contactForm.checkValidity()){
+      contactForm.reportValidity();
+      return;
+    }
+    if(!formEndpoint || formEndpoint.indexOf('PASTE_') === 0){
+      setFormStatus('The Gmail sending endpoint has not been connected yet.', 'error');
+      return;
+    }
+    var fields = new FormData(contactForm);
+    var enquiry = {
+      name: fields.get('name'),
+      email: fields.get('email'),
+      projectType: fields.get('projectType'),
+      message: fields.get('message'),
+      website: fields.get('website')
+    };
+    formSubmit.disabled = true;
+    formSubmit.setAttribute('aria-busy', 'true');
+    formSubmitLabel.textContent = 'Sending…';
+    setFormStatus('Sending your message…');
+    try {
+      await fetch(formEndpoint, {
+        method:'POST',
+        mode:'no-cors',
+        headers:{'Content-Type':'text/plain;charset=utf-8'},
+        body:JSON.stringify(enquiry)
+      });
+      contactForm.reset();
+      formStatus.hidden = true;
+      formWrap.classList.add('is-sent');
+    } catch(err) {
+      setFormStatus('We could not send your message. Please try again or email us directly.', 'error');
+      formSubmit.disabled = false;
+      formSubmit.removeAttribute('aria-busy');
+      formSubmitLabel.textContent = 'Send Message';
+    }
+  });
+})();
+</script>
+</body>
+</html>
